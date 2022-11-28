@@ -1,7 +1,7 @@
 function removeBook() {
     document.querySelectorAll('.delete').forEach(book => {
         book.addEventListener('click', () => {
-            fetch(`http://localhost:3000/cart/${book.id}`, { method: 'DELETE' })
+            fetch(`https://ouioui-back.vercel.app/cart/${book.id}`, { method: 'DELETE' })
                 .then(response => response.json())
                 .then(data => {
                     if (data.result) {
@@ -24,7 +24,7 @@ function removeBook() {
 }
 
 //Get cart
-fetch(`http://localhost:3000/cart`)
+fetch(`https://ouioui-back.vercel.app/cart`)
     .then(response => response.json())
     .then(data => {
         if (data.result) {
@@ -50,7 +50,7 @@ fetch(`http://localhost:3000/cart`)
 
 // Purchase
 document.querySelector('#purchase').addEventListener('click', () => {
-    fetch(`http://localhost:3000/bookings`, { method: 'put'})
+    fetch(`https://ouioui-back.vercel.app/bookings`, { method: 'put'})
     .then(response => response.json())
     .then(data => {
         data.result && window.location.assign('bookings.html')

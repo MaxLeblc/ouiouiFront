@@ -24,7 +24,7 @@ document.querySelector('#date').valueAsDate = new Date()
 function addBooking() {
     document.querySelectorAll('.book').forEach(book => {
         book.addEventListener('click', () => {
-            fetch(`http://localhost:3000/cart`, {
+            fetch(`https://ouioui-back.vercel.app/cart`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ tripId: book.id })
@@ -46,7 +46,7 @@ document.querySelector('#search').addEventListener('click', () => {
         return
     }
 
-    fetch(`http://localhost:3000/search/${departure}/${arrival}/${date}`)
+    fetch(`https://ouioui-back.vercel.app/search/${departure}/${arrival}/${date}`)
         .then(response => response.json())
         .then(data => {
             if (data.result) {

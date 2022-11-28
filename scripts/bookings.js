@@ -1,7 +1,7 @@
 // Reset bookings for demo
 function removeBooking() {
     document.querySelector('.delete').addEventListener('click', () => {
-        fetch(`http://localhost:3000/bookings`, { method: 'DELETE' })
+        fetch(`https://ouioui-back.vercel.app/bookings`, { method: 'DELETE' })
             .then(response => response.json())
             .then(data => {
                 if (data.result) {
@@ -16,7 +16,7 @@ function removeBooking() {
 }
 
 // Get bookings
-fetch('http://localhost:3000/bookings')
+fetch('https://ouioui-back.vercel.app/bookings')
     .then(response => response.json())
     .then(data => {
         if (data.result) {
