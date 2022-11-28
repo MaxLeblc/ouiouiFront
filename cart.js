@@ -36,7 +36,7 @@ fetch(`https://ouioui-back.vercel.app/cart`)
                 <div class="tripSelected">
                     <span>${trip.departure} <br> to <br> ${trip.arrival}</span>
                     <span>${moment(trip.date).format('HH:mm')}</span>
-                    <span>${trip.price}</span>
+                    <span>${trip.price}€</span>
                     <button class="delete" id="${trip._id}">X<button>
                 </div>
             `
