@@ -68,7 +68,7 @@ document.querySelector('#search').addEventListener('click', () => {
                 addBooking()
             } else {
                 document.querySelector('#results').innerHTML = `
-                <img class="resultsLogo" src="../images/train.png" alt="resultsLogo"/>
+                <img class="resultsLogo" src="./images/train.png" alt="resultsLogo"/>
                 <h4>No trip found.</h4>
                 `
             }

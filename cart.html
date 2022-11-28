@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <title>OuiOui - Bookings</title>
+    <title>OuiOui</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/bookings.css">
+    <link rel="stylesheet" href="./cart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
@@ -13,24 +13,29 @@
 
 <body id="body">
     <div id="header">
-        <a href="index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+        <a href="index.html"><img class="logo" src="./images/logo.png" alt="logo"></a>
         <div id="link">
             <a class="link" href="cart.html">Cart</a> <a class="link" href="bookings.html">Bookings</a>
         </div>
     </div>
 
     <div id="container">
-        <div id="trips">
-            <p>No bookings yet.</p>
+        <div id="cart">
+            <p>No tickets in your carts.</p>
             <p>Why not plan <a href="index.html" style="color: #E3006A;">a trip?</a></p>
         </div>
 
-        <div id="trips2" style="display:none;"></div>
+        <div id="cart2" style="display:none;">
+            <div id="payment">
+                <span>Total : <span id="total">0</span></span>
+                <button id="purchase">Purchase</button>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
-    <script src="../scripts/bookings.js"></script>
-    <script src="../scripts/resize.js"></script>
+    <script src="./cart.js"></script>
+    <script src="./resize.js"></script>
 </body>
 
 </html>
