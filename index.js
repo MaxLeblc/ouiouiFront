@@ -6,7 +6,7 @@ document.querySelector('#date').valueAsDate = new Date()
 //     for (let i = 0; i < document.querySelectorAll('.book').length; i++) {
 //         document.querySelectorAll('.book')[i].addEventListener('click', () => {
 //             console.log('click add')
-//             fetch(`http://localhost:3000/cart`, {
+//             fetch(`https://ouioui-back.vercel.app/cart`, {
 //                 method: 'POST',
 //                 headers: { 'Content-Type': 'application/json' },
 //                 body: JSON.stringify({ tripId: this.id }),
