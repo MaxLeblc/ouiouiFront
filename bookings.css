@@ -51,6 +51,10 @@ body {
     height: 75vh;
 }
 
+/* h3 {
+    margin: 0.5rem;
+} */
+
 #trips {
     display: flex;
     flex-direction: column;
@@ -74,7 +78,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 40rem;
+    width: 30rem;
     background-color: #E3006A;
     border-radius: 0.5rem;
     color: #fff;
